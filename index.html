@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Moiz - Portfolio</title>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f8f9fa;
+        color: #333;
+      }
+
+      /* Navbar */
+      header {
+        background: #343a40;
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Hero Section */
+      .hero {
+        text-align: center;
+        padding: 100px 20px;
+        background: #6c757d;
+        color: white;
+      }
+
+      .hero .btn {
+        background: #ff6f61;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      /* About Section */
+      .about,
+      .skills,
+      .projects,
+      .contact {
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .skills ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+
+      .skills ul li {
+        background: #007bff;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+
+      /* Projects */
+      .project-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .project {
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 250px;
+      }
+
+      /* Contact */
+      .contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact input,
+      .contact textarea {
+        width: 80%;
+        margin: 10px 0;
+        padding: 10px;
+      }
+
+      .contact button {
+        background: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        background: #343a40;
+        color: white;
+        padding: 20px;
+      }
+
+      .social-icons a i{
+        width: 25px;
+        padding: 20px 0 0 0;
+        margin: 5px;
+        color: #28a745;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <h1>Ahmad Moiz</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Full Stack Web Developer</h2>
+      <p>Building modern and efficient web applications.</p>
+      <!-- <a href="#projects" class="btn">View My Work</a> -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate Full Stack Developer with expertise in HTML, CSS,
+        JavaScript, and Bootstrap. Currently, I am enhancing my skills through
+        Full Stack Development training at Corvit Lahore. I love
+        problem-solving, continuous learning, and building efficient web
+        applications.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Bootstrap & React.js</li>
+        <li>Node.js & Express.js</li>
+        <li>MongoDB & SQL</li>
+        <li>SEO & Web Optimization</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Portfolio Website</h3>
+          <p>A personal portfolio showcasing my work and skills.</p>
+        </div>
+        <div class="project">
+          <h3>E-commerce Website</h3>
+          <p>Developed an online store using React and MongoDB.</p>
+        </div>
+        <div class="project">
+          <h3>SEO Optimization</h3>
+          <p>Improved website SEO for better Google rankings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Ahmad Moiz | Follow me on</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><i class="fa-brands fa-linkedin fa-2x"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram fa-2x"></i
+        ></a>
+        <a href="https://www.twitter.com/" target="_blank"
+          ><i class="fa-brands fa-x-twitter fa-2x"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
